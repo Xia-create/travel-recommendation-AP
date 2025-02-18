@@ -1,0 +1,135 @@
+/* Body and background colors */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1; /* Light gray background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #a8d8f7; /* Pastel blue */
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f7a8a8; /* Pastel pink hover effect */
+}
+
+/* Hamburger menu (for mobile devices) */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #f3f3f3;
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: block;
+    }
+
+    nav ul li {
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+/* Header styling */
+header {
+    background-color: #f7a8a8; /* Pastel pink */
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+/* Sections (beach, temple, etc.) */
+section {
+    background-color: white;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+/* Center the image container and make images the same size */
+.recommendation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.recommendation img {
+    width: 300px;   /* Set the width */
+    height: 200px;  /* Set the height */
+    object-fit: cover; /* Ensure the image fits the size without distortion */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between the image and text */
+}
+
+/* Footer styling */
+footer {
+    background-color: #a8d8f7; /* Pastel blue */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Smooth scrolling effect */
+html {
+    scroll-behavior: smooth;
+}
